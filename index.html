@@ -2,37 +2,65 @@
 <html>
 <head>
     <title>Edwin Janssen</title>
+    <!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-    <link rel="stylesheet" href="/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
-    <script type="text/javascript" src="/source/jquery.fancybox.pack.js?v=2.1.4"></script>
-
 </head>
 
 <body>
-   <script type="text/javascript">
+  <script type="text/javascript">
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
 	});
 </script>
   
-
-
   <div class="header">      
 <div id="head">
     
     <a class="logo" href="#"><img src="img/logo.png"/></a>
-    <div class="menu">
-        <ul class="navlist">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Expositie</a></li>
-            <li><a href="#">Shirts</a></li>
-            <li><a href="#">Nieuws</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+    
+    
+   <ul id="drop-down-menu">
+	<li><a href="#">Schilderijen</a>
+        <ul>
+			<li><a href="#">Expositie</a></li>
+		</ul>    
+    </li> 
+	<li><a href="#">Shop</a> 
+		<ul>
+			<li><a href="#">Winkels</a></li>
+		</ul> 
+	</li> 
+	<li><a href="#">Nieuws</a> 
+		<ul> 
+			<li><a href="#">Video's</a></li> 
+		</ul> 
+	</li>
+	<li><a href="#">Contact</a> 
+		<ul> 
+			<li><a href="#">Biografie</a></li> 
+		</ul> 
+	</li> 
+</ul>	
+<p class="clear_all"></p>
+    
   
         <div class="home-slide">  
             

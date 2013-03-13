@@ -75,27 +75,51 @@ img { border: 0; }
     height:70px; 
     float:left;
 }
-.menu {
-    margin: 20px 0 0 0;
-    height:70px;
-    line-height:70px;
+	
+
+#drop-down-menu{
+    margin-left:20px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size:16px; 
     float:right;
-    color:#fff;
-    font-style:italic;
-    font-weight:100;
-}
-    .menu a:hover{
-        font-weight:600;
-}
-.navlist li{
-    
-display: inline;
-list-style-type: none;
-padding-right: 50px;
-}
-.navlist li.active{
-    font-weight:600;   
-}
+    margin-top:50px;
+    font-style:italic;}
+	ul{
+		font-weight:200;color:#ffffff;
+		margin:0;
+		padding:0;
+		list-style:none}
+	ul li{
+		display:block;
+		position:relative;
+		float:left}
+	li ul{display:none}
+	ul li a{
+		display:block;
+		margin-left:1px;
+		text-decoration:none;
+		color:#ffffff;
+		padding: 5px 15px 5px 15px;
+		white-space:nowrap;}
+        ul li:nth-child(1){width:100px;}
+        ul li:nth-child(2){width:60px;}
+        ul li:nth-child(3){width:70px;}
+        ul li:nth-child(4){width:80px;}
+        ul li:nth-child(5){width:80px;}
+	ul li:hover a{color:inherit; font-weight:600;}
+	li:hover ul{ 
+		display:block; 
+		position:absolute}
+	li:hover li{ 
+		font-size:100%;
+		clear:left; 
+		width:12em}
+	li:hover a{color:inherit}
+	li:hover li a:hover{font-weight:600;}
+    li:hover li a{font-weight:200;}
+	.clear_all{clear:both;height:0.5em;}
+
+
 .home-slide {
     clear:both;
     padding:70px 100px 100px 50px;
