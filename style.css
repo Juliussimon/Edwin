@@ -245,57 +245,6 @@ h2{
 	.head .frame{
     	margin:59px 0 0 364px;
 	}
-
-/*************** SCHILDERIJEN PAGINA ****************************************************************************************/
-
-.header-schilderijen{
-    height:1000px;
-    min-width: 1000px;
-    overflow-x: hidden;
-    background:
-            url("img/schilderijen-bg.jpg") no-repeat,
-        #fff;
-    background-position:center top;
-    
-}   
-.sort{
-	margin-top:63px;
-	width:100%;
-	height:70px;
-	background:#16202a;
-} 
-.schilderijen{
-	width:100%;
-	height:100%;
-	background:#fff;
-}
-
-
-.schilderijen img {
-    opacity: 0,5;
-    float:left;
-    display: block;
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-	-moz-filter: grayscale(1);
-	-o-filter: grayscale(1);
-	-ms-filter: grayscale(1);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-    .schilderijen img:hover {
-    opacity: 1;
-    filter: none;
-    -webkit-filter: grayscale(0);
-	-moz-filter: grayscale(0);
-	-o-filter: grayscale(0);
-	-ms-filter: grayscale(0);
-    }
 .content-detail p{
 	float:left;
 	font-weight: 300;
@@ -332,4 +281,94 @@ h2{
 .content-detail table tr td{
 	padding:15px;
 	border-top:solid 2px #ccc;
+}
+
+/*************** SCHILDERIJEN PAGINA ****************************************************************************************/
+
+.header-schilderijen{
+    height:1000px;
+    min-width: 1000px;
+    background:
+            url("img/schilderijen-bg.jpg") no-repeat,
+        #fff;
+    background-position:center top;
+    
+}   
+
+.schilderijen{
+	width:100%;
+	height:100%;
+	background:#fff;
+}
+
+
+.schilderijen img {
+    opacity: 0,5;
+    float:left;
+    display: block;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+    .schilderijen img:hover {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+    }
+.sort{
+	color:#707c84;
+	margin-top:63px;
+	width:100%;
+	height:70px;
+	background:#16202a;
+}
+.sort a{
+	font-style: italic;
+	font-size:20px;
+	display:block;
+	padding:20px 50px 20px 50px;
+	float:left;
+	color:#707c84;
+	background:#1a242e;
+}
+	.sort a:hover{
+		border-top:solid 4px #42494e; 
+		margin-top:-4px;
+		color:#fff;
+		display:block;
+		background:#16202a;
+	}
+.sort p{
+	font-family: 'Bree Serif', serif;
+	float:left;
+	display:block;
+	margin:23px 52px 0 52px;
+	font-size:25px;
+	letter-spacing: 1px;
+}
+.sort .actief{
+	border-top:solid 4px #fff; 
+	margin-top:-4px;
+	display:block;
+	color:#fff;
+	background:#131b22;
+}
+	.sort .actief:hover{
+	color:#fff;
+	border-top:solid 4px #fff; 
+	margin-top:-4px;
+	display:block;
+	background:#131b22;
 }
