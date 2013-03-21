@@ -20,9 +20,9 @@ img { border: 0; }
     min-width: 1000px;
     overflow-x: hidden;
     background:
-        url("img/bg-ben.png") no-repeat,
-        #000409;
-    background-position:center;
+        url("img/bg.png") no-repeat,
+        #000;
+    background-position:center top;
     
 } 
 .content-header{
@@ -111,7 +111,7 @@ img { border: 0; }
 
 .home-slide {
     clear:both;
-    padding:70px 100px 100px 50px;
+    padding:100px 100px 120px 50px;
     width:400px;
     color:#fff; 
     margin: 0 0 50px 0;
@@ -159,7 +159,7 @@ h2{
     position:relative;
     height:70px;
     width:1000px;
-    background:#121a22;
+    background:#000;
 }
 
 @media screen and (min-width: 1001px) {
@@ -225,6 +225,9 @@ h2{
 	-o-filter: grayscale(0);
 	-ms-filter: grayscale(0);
     }
+.twitter-feed{
+	color:#fff;
+}
 
 
 /*************** DETAIL PAGINA ****************************************************************************************/
