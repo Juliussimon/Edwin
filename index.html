@@ -24,38 +24,11 @@
 
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
- <script type="text/javascript">
-$(document).ready(function() {
-  
-    // aqui el id de twitter
-    var user = 'juliusimon';
-          
-    // count= para cambiar el numero de resultados
-    $.getJSON('http://twitter.com/statuses/user_timeline.json?screen_name=' + user + '&count=5&callback=?', function(data)      {
-          
-        // resultado
-        var tweet = "";
-for (i = 0; i < data.length; i++) {
-tweet += data[i].text + "</br></br>";
-}
-      
-        // links
-        tweet = tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, function(url) {
-            return '<a target="_blank" href="'+url+'">'+url+'</a>';
-        }).replace(/B@([_a-z0-9]+)/ig, function(reply) {
-            return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
-        });
-      
-        // output
-        $(".twitter-feed").html(tweet);
-    }); 
-      
-});
-</script>
 
   <script type="text/javascript">
 	$(document).ready(function() {
@@ -106,8 +79,6 @@ tweet += data[i].text + "</br></br>";
             <a href="#" class="lees-verder"><div class="pijl"></div> lees verder </a>
             </div><!-- home-slide -->
     
-        <div class="twitter-feed">
-        </div><!-- twitter-feed -->
         
         <div class="image-bar">
            
@@ -121,7 +92,7 @@ tweet += data[i].text + "</br></br>";
                 <a class="fancybox" rel="group" href="img/big/8.jpg"><img src="img/8.png" width="200" height="200"/></a>
                 <a class="fancybox" rel="group" href="img/big/9.jpg"><img src="img/9.png" width="200" height="200"/></a>
                 <a class="fancybox" rel="group" href="img/big/10.jpg"><img src="img/10.png" width="200" height="200"/></a>
-                <a href="schilderijen.html"><div class="image-bar-alles">Bekijk alle schilderijen<div class="pijl-alle"></div></div></a>
+                <a href="schilderijen.html"><div class="image-bar-alles"><p>Bekijk alle schilderijen</p><div class="pijl-alle"></div></div></a>
                 <a class="fancybox" rel="group" href="img/big/11.jpg"><img src="img/11.png" width="200" height="200"/></a>
                 <a class="fancybox" rel="group" href="img/big/12.jpg"><img src="img/12.png" width="200" height="200"/></a>
                 <a class="fancybox" rel="group" href="img/big/13.jpg"><img src="img/13.png" width="200" height="200"/></a>
@@ -140,7 +111,10 @@ tweet += data[i].text + "</br></br>";
         
       </div>    <!-- content-header -->  
     <div class="content">
-        nieuws itemsssss
+    
+                <a class="twitter-timeline" href="https://twitter.com/galleryjanssen" data-widget-id="314811972946362368">Tweets by @galleryjanssen</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
     </div><!-- content -->
 
     
