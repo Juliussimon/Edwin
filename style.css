@@ -104,41 +104,41 @@ h2{
     font-family: 'Open Sans', sans-serif; 
     font-size:16px; 
     float:right;
-    margin-top:50px;
-    font-style:italic;}
-	ul{
+/*    margin-top:50px;
+*/    font-style:italic;}
+	#drop-down-menu{
 		font-weight:200;color:#ffffff;
-		margin:0;
+		margin: 50px 0 0 0;
 		padding:0;
 		list-style:none}
-	ul li{
+	#drop-down-menu li{
 		display:block;
 		position:relative;
 		float:left}
-	li ul{display:none}
-	ul li a{
+	#drop-down-menu li ul{display:none}
+	#drop-down-menu li a{
 		display:block;
 		margin-left:1px;
 		text-decoration:none;
 		color:#ffffff;
 		padding: 5px 15px 5px 15px;
 		white-space:nowrap;}
-        ul li:nth-child(1){width:100px;}
-        ul li:nth-child(2){width:60px;}
-        ul li:nth-child(3){width:70px;}
-        ul li:nth-child(4){width:80px;}
-        ul li:nth-child(5){width:80px;}
-	ul li:hover a{color:inherit; font-weight:600;}
-	li:hover ul{ 
+        #drop-down-menu li:nth-child(1){width:100px;}
+        #drop-down-menu li:nth-child(2){width:60px;}
+        #drop-down-menu li:nth-child(3){width:70px;}
+        #drop-down-menu li:nth-child(4){width:80px;}
+        #drop-down-menu li:nth-child(5){width:80px;}
+	#drop-down-menu li:hover a{color:inherit; font-weight:600;}
+	#drop-down-menu li:hover ul{ 
 		display:block; 
 		position:absolute}
-	li:hover li{ 
+	#drop-down-menu li:hover li{ 
 		font-size:100%;
 		clear:left; 
 		width:12em}
-	li:hover a{color:inherit}
-	li:hover li a:hover{font-weight:600;}
-    li:hover li a{font-weight:200;}
+	#drop-down-menu li:hover a{color:inherit}
+	#drop-down-menu li:hover li a:hover{font-weight:600;}
+    #drop-down-menu li:hover li a{font-weight:200;}
 	.clear_all{clear:both;height:0.5em;}
 
 .home-slide {
@@ -196,11 +196,22 @@ h2{
     font-size:38px;
     font-weight:600;
 }
-.twitter-timeline {
-	margin:40px 0 0 0;
-	float:right;
+.socialmedia{
+	color:#4d4d4d;
+	margin:50px 0 0 50px;
+	float:left;
 }
-
+	.socialmedia .twitter	{background: url('img/social-sprite.png'); width:51px; height:51px;}
+	.socialmedia .facebook	{background: url('img/social-sprite.png'); width:51px; height:51px; background-position: -100px 0;}
+	.socialmedia .flickr	{background: url('img/social-sprite.png'); width:51px; height:51px; background-position: -200px 0;}
+	.socialmedia .linkedin	{background: url('img/social-sprite.png'); width:51px; height:51px; background-position: -300px 0;}
+	.socialmedia .youtube	{background: url('img/social-sprite.png'); width:51px; height:51px; background-position: -400px 0;}
+	.socialmedia .vimeo		{background: url('img/social-sprite.png'); width:51px; height:51px; background-position: -500px 0;}
+	
+.twitter-timeline {
+	margin:50px 0 0 0;
+	float:left;
+}
 @media screen and (min-width: 1001px) {
     body {
         //overflow-x: hidden;
@@ -284,9 +295,7 @@ h2{
 	-o-filter: grayscale(0);
 	-ms-filter: grayscale(0);
     }
-.twitter-feed{
-	color:#fff;
-}
+
 
 
 /*************** DETAIL PAGINA ****************************************************************************************/
@@ -343,6 +352,28 @@ h2{
 .content-detail table tr td{
 	padding:15px;
 	border-top:solid 2px #ccc;
+}
+.btn-koop{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 20px 0 0 0;
+	padding:15px 30px 15px 30px;
+	display: block;
+	background:#34495e;
+	float:left;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn-koop:hover{
+	background:#537699;
 }
 
 /*************** SCHILDERIJEN PAGINA ****************************************************************************************/
@@ -434,3 +465,56 @@ h2{
 	display:block;
 	background:#131b22;
 }
+
+
+
+/*- FILTER OPTIONS -*/
+ul#filterOptions {
+  width: 802px;
+  height: 52px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+ul#filterOptions li {
+  height: 52px;
+  margin-right: 2px;
+  display: inline-block;
+  float: left;
+}
+ul#filterOptions li a {
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #999;
+  background: #cfcfcf;
+  color: #fff;
+  font-weight: bold;
+  line-height: 50px;
+  text-decoration: none;
+  display: block;
+}
+ul#filterOptions li a:hover {
+  background: #c9c9c9;
+}
+ul#filterOptions li.active a {
+  background: #999;
+}
+/*- -*/
+/*- OUR DATA HOLDER -*/
+ul.ourHolder {
+  width: 800px;
+  height: 850px;
+  overflow: hidden;
+}
+ul.ourHolder li.item {
+  width: 200px;
+  height: 200px;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+ul.ourHolder li.item h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+/*- -*/
