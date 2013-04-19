@@ -5,6 +5,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
      <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
@@ -12,7 +13,7 @@
   
 
 
-  <div class="header-detail">    
+  <div id="header-detail" class="header-detail-1">    
 
 <div class="head">
     
@@ -43,9 +44,50 @@
 <p class="clear_all"></p>
 
       	<div class="frame">
-	  		<img src="img/12.png"width="200" height="200"/>
+	  		<img src="img/big/12.jpg" />
 	  	</div>  
-    
+	  	
+	  	<a id="kamer-switch" class="btn-koop" href="#">
+		  	andere kamer
+	  	</a>
+	  	
+	  	<script>
+		  	$(document).ready(function(){
+			  	/*			  			  	
+			  $("#kamer-switch").hover(function(){
+			  $(this).filter(':not(:animated)').animate({
+			     margin:'180px 0 0 330px'
+			  },'fast');
+			// This only fires if the row is not undergoing an animation when you mouseover it
+			},
+			function() {
+			  $(this).animate({
+			     margin:'185px 0 0 330px'
+			  },'fast');
+			});*/
+			  	$('#kamer-switch').click(function(){
+					if($('#header-detail').hasClass('header-detail-1')){
+					
+						$('#header-detail').fadeOut(400 , function(){
+							$('#header-detail').removeClass('header-detail-1')
+							$('#header-detail').addClass('header-detail-2');
+							$('#header-detail').fadeIn(400 , function() {
+							});
+						});	
+					}	
+					else if($('#header-detail').hasClass('header-detail-2')){
+					
+						$('#header-detail').fadeOut(400 , function(){
+							$('#header-detail').removeClass('header-detail-2')
+							$('#header-detail').addClass('header-detail-1');
+							$('#header-detail').fadeIn(400 , function() {
+							});
+						});	
+					}	
+			  	});
+		  	});
+
+	  	</script>
 </div><!-- head -->    
 
 </div><!-- header -->

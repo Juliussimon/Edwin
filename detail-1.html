@@ -17,24 +17,27 @@
 
 <div class="head">
     
-	<a class="logo" href="index.html"><img src="img/logo.png"/></a>
+	<a href="index.html"><div id="logo" class="logo"></div></a>
     
    <ul id="drop-down-menu">
 	<li><a href="schilderijen.html">Schilderijen</a>
         <ul>
 			<li><a href="#">Expositie</a></li>
 		</ul>    
-    </li> 
+    </li>
+    <li>/</li>
 	<li><a href="shop.html">Shop</a>  
 		<ul>
 			<li><a href="#">Winkels</a></li>
 		</ul> 
-	</li> 
+	</li>
+	<li>/</li> 
 	<li><a href="#">Nieuws</a> 
 		<ul> 
 			<li><a href="#">Video's</a></li> 
 		</ul> 
 	</li>
+	<li>/</li>
 	<li><a href="#">Contact</a> 
 		<ul> 
 			<li><a href="#">Biografie</a></li> 
@@ -48,7 +51,7 @@
 	  	</div>  
 	  	
 	  	<a id="kamer-switch" class="btn-koop" href="#">
-		  	andere kamer
+		  	licht / donker
 	  	</a>
 	  	
 	  	<script>
@@ -69,7 +72,11 @@
 					if($('#header-detail').hasClass('header-detail-1')){
 					
 						$('#header-detail').fadeOut(400 , function(){
-							$('#header-detail').removeClass('header-detail-1')
+							$('#header-detail').removeClass('header-detail-1');
+							$('#logo').removeClass('logo');
+							$('#logo').addClass('logo-zwart');
+							$('#drop-down-menu').css( "color", "#000" );
+							$('#drop-down-menu li a').css( "color", "#000" );
 							$('#header-detail').addClass('header-detail-2');
 							$('#header-detail').fadeIn(400 , function() {
 							});
@@ -78,7 +85,11 @@
 					else if($('#header-detail').hasClass('header-detail-2')){
 					
 						$('#header-detail').fadeOut(400 , function(){
-							$('#header-detail').removeClass('header-detail-2')
+							$('#header-detail').removeClass('header-detail-2');
+							$('#logo').removeClass('logo-zwart');
+							$('#logo').addClass('logo');
+							$('#drop-down-menu').css( "color", "#fff" );
+							$('#drop-down-menu li a').css( "color", "#fff" );
 							$('#header-detail').addClass('header-detail-1');
 							$('#header-detail').fadeIn(400 , function() {
 							});

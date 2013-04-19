@@ -16,16 +16,17 @@ img { border: 0; }
     position: relative;
 }
 .head .btn-koop{
-	margin:185px 0 0 330px;
+	margin:166px 0 0 350px;
 	position:relative; 
 	padding:15px 30px 30px 30px;
-	-moz-box-shadow: 0px 0px 50px #fff; /* Firefox/Mozilla */  
-	-webkit-box-shadow: 0px 0px 50px #fff; /*Safari/Chrome */  
-	box-shadow: 0px 0px 50px #fff; /* Opera & hoe het zou moeten */  
-	/* Voor IE 8 */  
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=100, Color='#292929')";  
-	/* Voor IE 5.5 - 7 */  
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=100, Color='#292929');  
+	border:5px solid #f5f5f5;
+		    		 -moz-box-shadow: 0px 0px 20px #b3b3b3; /* Firefox/Mozilla */  
+  -webkit-box-shadow: 0px 0px 20px #b3b3b3; /*Safari/Chrome */  
+  box-shadow: 0px 0px 80px #2d3136; /* Opera & hoe het zou moeten */  
+  /* Voor IE 8 */  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=100, Color='#b3b3b3')";  
+  /* Voor IE 5.5 - 7 */  
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=100, Color='#b3b3b3'); 
 }
 
 h2{
@@ -135,11 +136,22 @@ font-family: 'Bree Serif', serif;
     width:1000px;
     margin: 0 auto;
 }
+#logo{
+	margin:40px 0 0 0;
+    width:233px;
+    height:70px; 
+    float:left;
+}
+
 .logo{
 	margin:40px 0 0 0;
     width:233px;
     height:70px; 
     float:left;
+    background: url("img/logo.png") no-repeat;
+}
+.logo-zwart{
+    background: url("img/logo-zwart.png") no-repeat;
 }
 	
 
@@ -151,7 +163,8 @@ font-family: 'Bree Serif', serif;
 /*    margin-top:50px;
 */    font-style:italic;}
 	#drop-down-menu{
-		font-weight:200;color:#ffffff;
+		font-weight:300;
+		color:#ffffff;
 		margin: 50px 0 0 0;
 		padding:0;
 		list-style:none}
@@ -164,14 +177,15 @@ font-family: 'Bree Serif', serif;
 		display:block;
 		margin-left:1px;
 		text-decoration:none;
-		color:#ffffff;
 		padding: 5px 15px 5px 15px;
 		white-space:nowrap;}
-        #drop-down-menu li:nth-child(1){width:100px;}
-        #drop-down-menu li:nth-child(2){width:60px;}
-        #drop-down-menu li:nth-child(3){width:70px;}
-        #drop-down-menu li:nth-child(4){width:80px;}
-        #drop-down-menu li:nth-child(5){width:80px;}
+        #drop-down-menu li:nth-child(1){width:125px;}
+        #drop-down-menu li:nth-child(2){width:20px; padding-top: 5px; color:#a2a2a2;}
+        #drop-down-menu li:nth-child(3){width:90px;}
+        #drop-down-menu li:nth-child(4){width:20px; padding-top: 5px; color:#a2a2a2;}
+        #drop-down-menu li:nth-child(5){width:100px;}
+        #drop-down-menu li:nth-child(6){width:20px; padding-top: 5px; color:#a2a2a2;}
+        #drop-down-menu li:nth-child(7){width:80px;}
 	#drop-down-menu li:hover a{color:inherit; font-weight:600;}
 	#drop-down-menu li:hover ul{ 
 		display:block; 
@@ -391,7 +405,7 @@ h2{
     margin:100px 0 0 100px;	
 }
 #header-detail{
-    height:650px;
+    height:700px;
     min-width: 1000px;
     overflow: hidden;
 	background-position-x:center;
@@ -405,15 +419,16 @@ h2{
 }
 .header-detail-2{
     background:
-            url("img/big/1.jpg") no-repeat,
-        #000;
+            url("img/woonkamer2.jpg") no-repeat,
+        #f4f3ed;
 }       
 	.head .frame{
 		width:280px;
 		height:280px;
-    	margin:20px 0 0 300px;
+    	margin:80px 0 0 300px;
 	}
 		.head .frame img{
+		
 		border:4px solid #1c1c1c;
 		 max-width:100%; 
 		 max-height:100%;
@@ -480,6 +495,9 @@ h2{
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+.btn a{
+		color: #fff;
 }
 .btn-koop:hover{
 	background:#537699;
