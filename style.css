@@ -13,25 +13,35 @@ img { border: 0; }
 .head{
     width:1000px;
     margin: 0 auto;
+    position: relative;
 }
 h2{
 	font-family: 'Bree Serif', serif;
 }
-
+h4{
+font-size: 20px;
+font-family: 'Bree Serif', serif;
+}
 .header{
 	height:100%;
     min-width: 1000px;
     overflow-x: hidden;
     background:
-        url("img/bg.png") no-repeat,
+        url("img/bg.jpg	") no-repeat,
         #000;
     background-position:center top;
-    
+
 } 
 .content-header{
     min-width: 1000px;
     overflow-x: hidden;
-    background: #f2f2f2;
+    background: #f5f5f5;
+    height:100%;
+}
+.content-header-home{
+    min-width: 1000px;
+    overflow-x: hidden;
+    background: url('img/pattern-testimonial.jpg') repeat;
     height:100%;
 }
     .testimonial{
@@ -39,18 +49,36 @@ h2{
     width:1000px;
     margin: 0 auto;  
     font-family: 'Bree Serif', sans-serif;
-    color:#4d4d4d;
+    color:#4b5c66;
 }
+    	.testimonial img{
+	    	float:left;
+	    	margin:0 40px 50px 0;
+	    	border: 6px solid #fff;
+	    		 -moz-box-shadow: 0px 0px 20px #b3b3b3; /* Firefox/Mozilla */  
+  -webkit-box-shadow: 0px 0px 20px #b3b3b3; /*Safari/Chrome */  
+  box-shadow: 0px 0px 20px #b3b3b3; /* Opera & hoe het zou moeten */  
+  /* Voor IE 8 */  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=100, Color='#b3b3b3')";  
+  /* Voor IE 5.5 - 7 */  
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=100, Color='#b3b3b3');  
+    	}
 	    .testimonial p{
 	    font-family: 'Open Sans', sans-serif;
 	    font-size:20px;
 	    font-weight: 300;
 	    color:#808080;
-	    padding:20px 0 0 20px;
+	    padding:40px 0 0 20px;
 	    font-style: italic;	
 	    }	
+	    .testimonial h2{
+	    	color:#171717;
+	    }
 	    .testimonial span{
-		padding:0 0 0 20px;    
+	    font-family: 'Open Sans', sans-serif;
+	    font-weight: 600;
+		padding:0 0 0 20px;
+		float:left;    
 	    }
 	    .testimonial a{
 		    color:#808080;
@@ -60,14 +88,17 @@ h2{
 		    color:#4d4d4d;
 		    text-decoration: underline;
 		    }
-
+		    .testimonial-r{
+		    	margin:20px 0 0 0;
+				float: left;    
+		    }
     .content-header-titel{
     padding:30px 0 20px 0;
      width:1000px;
      margin: 0 auto;  
      font-family: 'Bree Serif', sans-serif;
     font-size:35px;
-    color:#495664;
+    color:#3a3a3a;
     }
     
   .content-header-titel a{
@@ -143,16 +174,33 @@ h2{
 
 .home-slide {
     clear:both;
-    padding:100px 100px 120px 50px;
+    float:left;
     width:400px;
     color:#fff; 
-    margin: 0 0 50px 0;
+    margin:100px 0 150px 100px;
+    position: relative;
+}
+.home-slide h2{
+	font-weight: 100;
+	font-size: 32px;
 }
 .home-slide p{
-    font-size:16px;
-    font-weight:100;
-    padding-top:20px;
-    color:#b3b3b3;
+    font-size:18px;
+    font-weight:200;
+    padding-top:15px;
+    color:#7d7d7d;
+}
+.header-img{
+	float:right;
+	bottom:-5px;
+	right:0;
+	position:absolute;
+}
+.header-img img{
+	display: none;
+}
+.header-img img:first-child{
+	display:block;
 }
 a.lees-verder{
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -193,14 +241,39 @@ a.lees-verder .pijl {
     background-position: 0 33px;
 }
 h2{
-    font-size:38px;
+    font-size:32px;
     font-weight:600;
 }
 .socialmedia{
-	color:#4d4d4d;
+	width:400px;
 	margin:50px 0 0 50px;
 	float:left;
 }
+	.socialmedia a{	
+		display:inline-block;
+		color:#4d4d4d;
+		float:left;
+		margin:20px 40px 0 0;
+		    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+	 	.socialmedia a:hover{
+
+    filter: none;
+    -webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	 	}
 	.socialmedia .twitter	{background: url('img/social-sprite.png'); width:51px; height:51px;}
 	.socialmedia .facebook	{background: url('img/social-sprite.png'); width:51px; height:51px; background-position: -100px 0;}
 	.socialmedia .flickr	{background: url('img/social-sprite.png'); width:51px; height:51px; background-position: -200px 0;}
@@ -219,6 +292,7 @@ h2{
 }
 
 .image-bar {
+	clear:both;
     width:1400px; 
     margin-left: -200px;
 }
@@ -314,6 +388,7 @@ h2{
     
 }    
 	.head .frame{
+	
     	margin:59px 0 0 364px;
 	}
 .content-detail p{
@@ -325,7 +400,7 @@ h2{
 }
 .content-detail img{
 	border:solid 9px #fff;
-	margin:50px 0 0 0;
+	margin:50px 0 70px 0;
 	width:550px;
 	float:right;
 	 -moz-box-shadow: 0px 0px 10px #b3b3b3; /* Firefox/Mozilla */  
@@ -396,6 +471,7 @@ h2{
 
 
 .schilderijen img {
+	border:none;
     opacity: 0,5;
     float:left;
     display: block;
@@ -523,3 +599,56 @@ ul.ourHolder li.item h3 {
   line-height: 20px;
 }
 /*- -*/
+
+
+/*************** SHOP PAGINA ****************************************************************************************/
+.header-shop{
+    height:180px;
+    min-width: 1000px;
+    background:
+            url("img/schilderijen-bg.jpg") no-repeat,
+        #000;
+    background-position:center top;
+}   
+.content-shop{
+	
+}
+.content-shop a{
+	color:#000;	
+}
+.content-shop h4{
+	color:#333333;
+	margin:20px 0 0 0;
+}
+	.pic{
+		border:5px solid #e6e6e6;
+		overflow:hidden;
+		height: 190px;
+		width: 190px;
+		background:#f7f7f7;
+	}
+	.pic img {
+		margin:15px 0 0 15px;
+		height: 160px;
+		width: 160px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+          opacity:0;
+          }
+         .pic img:hover {
+         margin:-50px 0 0 -50px;	;
+  width: 300px;
+  height: 300px;
+} 
+         
+.content-shop a.item{
+	float:left;
+	display: inline-block;
+	margin: 50px 66px 0 0;
+}
+.content-shop a.item:nth-child(4n+4){
+	margin: 50px 0 0 0;
+}

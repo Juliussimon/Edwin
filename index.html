@@ -39,8 +39,7 @@
   <div class="header">      
 <div  class="head">
     
-    <a class="logo" href="#"><img src="img/logo.png"/></a>
-    
+	<a class="logo" href="index.html"><img src="img/logo.png"/></a>
     
    <ul id="drop-down-menu">
 	<li><a href="schilderijen.html">Schilderijen</a>
@@ -48,7 +47,7 @@
 			<li><a href="#">Expositie</a></li>
 		</ul>    
     </li> 
-	<li><a href="http://523550.spreadshirt.nl/" target="_blank">Shop</a> 
+	<li><a href="shop.html">Shop</a>  
 		<ul>
 			<li><a href="#">Winkels</a></li>
 		</ul> 
@@ -58,7 +57,7 @@
 			<li><a href="#">Video's</a></li> 
 		</ul> 
 	</li>
-	<li><a href="#">Contact</a> 
+	<li><a href="contactform.php">Contact</a> 
 		<ul> 
 			<li><a href="#">Biografie</a></li> 
 		</ul> 
@@ -77,8 +76,34 @@
               Edwin Janssen is ruim 10 jaar geleden begonnen met schilderen. Hij raakte ge&iuml;nspireerd door een schilderij van Herman Brood.
             </p>
             <a href="#" class="lees-verder"><div class="pijl"></div> lees verder </a>
-            </div><!-- home-slide -->
+        </div><!-- home-slide -->
+        
+        
+        <div class="header-img">
+        	<img class="banner" src="img/header-img-1.png"/>
+        	<img class="banner" src="img/header-img-2.png"/>     
+        </div><!-- header-img -->
+        <script>
+        
+$(document).ready(function() {
     
+    var delay = 3000, fade = 1000;
+    var banners = $('.banner');
+    var len = banners.length;
+    var i = 0;
+    
+    setTimeout(cycle, delay);
+    
+    function cycle() {
+        $(banners[i%len]).fadeOut(fade, function() {
+            $(banners[++i%len]).fadeIn(fade, function() {
+                setTimeout(cycle, delay);   
+            });
+        });
+    }
+
+});
+        </script>
         
         <div class="image-bar">
            
@@ -102,7 +127,19 @@
 </div><!-- head -->    
 
 </div><!-- header -->
-
+    <div class="content-header-home">
+        
+        <div class="testimonial">
+        <img src="img/khalid.jpg"/>
+        
+        <div class="testimonial-r">
+        <h2>- Khalid Oubaha</h2><span>Eigenaar 5th Avenue Arnhem <a target="_blank" href="http://www.5thavenue.nl">5thavenue.nl</a></span>
+        <p>"Edwin Janssen heeft van 5th Avenue een exclusieve club gemaakt die wij voor ogen hadden. <br/>Hij heeft 5th Avenue echt een unieke uitstraling gegeven!"</p>
+        </div>
+        
+        </div><!-- testimonial -->
+        
+      </div>    <!-- content-header -->  
 		 <div class="content">
 		
 		   <a class="twitter-timeline" href="https://twitter.com/galleryjanssen" data-widget-id="314811972946362368">Tweets by @galleryjanssen</a>
@@ -110,27 +147,19 @@
 		
 		 <div class="socialmedia">
 		 
-		    <h2>Social media</h2><br/><br/>
-		    <a href="#"><div class="twitter"></div> twitter </a>
-		    <a href="#"><div class="facebook"></div> Facebook </a>
-		    <a href="#"><div class="flickr"></div> Facebook </a>
-		    <a href="#"><div class="linkedin"></div> Facebook </a>
-		    <a href="#"><div class="youtube"></div> Facebook </a>
-		    <a href="#"><div class="vimeo"></div> Facebook </a>
+		    <h2>Social media</h2>
+		    <a href="#"><div class="twitter"></div> </a>
+		    <a href="#"><div class="facebook"></div> </a>
+		    <a href="#"><div class="flickr"></div> </a>
+		    <a href="#"><div class="linkedin"></div> </a>
+		    <a href="#"><div class="youtube"></div> </a>
+		    <a href="#"><div class="vimeo"></div> </a>
 		 </div><!-- socialmedia -->
 		              
 		
 		    </div><!-- content -->		
 		    
-    <div class="content-header">
-        
-        <div class="testimonial">
-        <h2>- Khalid Oubaha</h2><span>Eigenaar 5th Avenue Arnhem <a href="http://www.5thavenue.nl">www.5thavenue.nl</a></span>
-        <p>"Edwin Janssen heeft van 5th Avenue een exclusieve club gemaakt die wij voor ogen hadden. <br/>Hij heeft 5th Avenue echt een unieke uitstraling gegeven!"</p>
 
-        </div><!-- content-header-titel -->
-        
-      </div>    <!-- content-header -->  
    
 
     
